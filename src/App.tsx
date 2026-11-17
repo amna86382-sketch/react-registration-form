@@ -14,7 +14,7 @@ function App() {
   const [student, setStudent] = useState<any>(null);
 
   // Form Submit Function
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  function handleSubmit(e: React.SubmitEvent<HTMLFormElement>) {
     e.preventDefault();
     // Validation
     if (!name || !email || !phone || !course || !gender) {
